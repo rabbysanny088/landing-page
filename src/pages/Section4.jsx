@@ -117,7 +117,7 @@ function Section4() {
             >
               <div className="relative">
                 <img
-                  src="/public/image.png"
+                  src="/image.png"
                   alt="Dashboard Interface"
                   width={800}
                   height={600}

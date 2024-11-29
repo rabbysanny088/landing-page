@@ -55,7 +55,7 @@ function Section1() {
               <img
                 className="w-full h-auto"
                 loading="lazy"
-                src="/public/image.png"
+                src="/image.png"
                 alt="image"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-background/30  via-transparent to-transparent"></div>
