@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+      <!-- Circle base -->
+      <circle cx="50" cy="50" r="45" fill="black"/>
+
+      <!-- Status indicator slash -->
+      <path d="M25 75 L75 25" stroke="white" stroke-width="12" stroke-linecap="round"/>
+
+      <!-- Small dot element representing monitoring point -->
+      <circle cx="65" cy="35" r="8" fill="black" stroke="white" stroke-width="3"/>
+</svg>
