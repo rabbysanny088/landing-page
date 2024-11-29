@@ -45,11 +45,7 @@ export default function Section9() {
               {/* Brand */}
               <div className="md:col-span-1">
                 <div className="flex items-center gap-2">
-                  <img
-                    src="/public/logo.svg"
-                    className="h-8 w-8 "
-                    alt="image"
-                  />
+                  <img src="/logo.svg" className="h-8 w-8 " alt="image" />
                   <span className="text-xl font-bold">CertPing</span>
                 </div>
                 <p className="mt-4 text-sm text-gray-400">

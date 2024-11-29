@@ -42,7 +42,7 @@ const Navbar = () => {
           <div className="flex items-center justify-around">
             <div className="flex items-center gap-2">
               <img
-                src="/public/logo.svg"
+                src="/logo.svg"
                 className="w-8 h-8 bg-black rounded-full"
                 alt="image"
               />
