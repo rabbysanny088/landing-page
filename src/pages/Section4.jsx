@@ -48,9 +48,9 @@ function Section4() {
   ];
 
   return (
-    <section>
-      <div className="py-8 px-6">
-        <div className="max-w-7xl mx-auto">
+    <section className="overflow-hidden">
+      <div className="py-8 px-6 overflow-hidden">
+        <div className="max-w-7xl mx-auto overflow-hidden">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left Column */}
             <motion.div

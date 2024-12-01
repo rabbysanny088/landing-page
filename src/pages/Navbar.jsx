@@ -39,7 +39,7 @@ const Navbar = () => {
               : "bg-white text-black"
           }`}
         >
-          <div className="flex items-center justify-around">
+          <div className="flex items-center justify-between lg:justify-around ">
             <div className="flex items-center gap-2">
               <img
                 src="/logo.svg"
@@ -48,56 +48,28 @@ const Navbar = () => {
               />
               <span className="text-xl font-semibold">CertPing</span>
             </div>
-
-            {/* Desktop menu */}
-            <div className="hidden md:flex items-center gap-8">
-              <a
-                href="#"
-                className="hover:bg-[#f4f4f5] rounded-lg py-2 px-3 transition duration-300"
-              >
+            <div className="hidden md:flex items-center gap-4">
+              <a href="#" className="hover:bg-[#f4f4f5] rounded-lg py-2 px-3">
                 Why Certping?
               </a>
-              <a
-                href="#"
-                className="hover:bg-[#f4f4f5] rounded-lg py-2 px-3 transition duration-300"
-              >
+              <a href="#" className="hover:bg-[#f4f4f5] rounded-lg py-2 px-3">
                 Features
               </a>
-              <a
-                href="#"
-                className="hover:bg-[#f4f4f5] rounded-lg py-2 px-3 transition duration-300"
-              >
+              <a href="#" className="hover:bg-[#f4f4f5] rounded-lg py-2 px-3">
                 Pricing
               </a>
-              <a
-                href="#"
-                className="hover:bg-[#f4f4f5] rounded-lg py-2 px-3 transition duration-300"
-              >
+              <a href="#" className="hover:bg-[#f4f4f5] rounded-lg py-2 px-3">
                 Check your website
               </a>
             </div>
-
-            {/* Desktop buttons */}
             <div className="hidden md:flex items-center gap-4">
-              <button className="px-4 pt-[6px] pb-2 inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 border border-input bg-background hover:bg-[#f4f4f5] rounded-full ">
-                Log in
-              </button>
-              <button className="text-white inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm hover:bg-[#161619] font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 bg-[#2E2E31] text-primary-foreground hover:bg-primary/90 pt-[6px] pb-2 rounded-full px-6">
+              <button className="px-4 py-2 border rounded-full">Log in</button>
+              <button className="px-6 py-2 text-white bg-[#2E2E31] rounded-full">
                 Get Started
               </button>
             </div>
-
-            {/* Mobile menu toggle */}
             <button className="md:hidden" onClick={toggleMenu}>
-              {isMenuOpen ? (
-                <div className="hover:bg-[#f4f4f5] rounded-md w-10 h-10 flex items-center justify-center p-[10px] transition dur30">
-                  <X size={24} />
-                </div>
-              ) : (
-                <div className="hover:bg-[#f4f4f5] rounded-md w-10 h-10 flex items-center justify-center p-[10px] transition dur30">
-                  <Menu size={24} />
-                </div>
-              )}
+              {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
           </div>
 
