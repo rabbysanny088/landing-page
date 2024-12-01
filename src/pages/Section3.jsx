@@ -30,9 +30,9 @@ function Section3() {
 
   return (
     <section>
-      <div className="py-24 px-6">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+      <div className="py-24 px-6 overflow-hidden">
+        <div className="max-w-7xl mx-auto overflow-hidden">
+          <div className="grid lg:grid-cols-2 gap-12 items-center overflow-hidden">
             <motion.div
               className="space-y-8"
               initial="hidden"
