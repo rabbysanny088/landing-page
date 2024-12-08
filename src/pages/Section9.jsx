@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 export default function Section9() {
   return (
-    <section>
+    <div>
       <div className="min-h-screen bg-gray-900 text-white">
         {/* Hero Section */}
         <motion.div
@@ -39,7 +39,7 @@ export default function Section9() {
         </motion.div>
 
         {/* Footer */}
-        <footer className="border-t border-gray-800 bg-gray-900">
+        <footer className="border-t border-gray-800 bg-gray-900 mt-10">
           <div className="mx-auto max-w-6xl px-4 py-12">
             <div className="grid gap-8 md:grid-cols-4">
               {/* Brand */}
@@ -120,6 +120,6 @@ export default function Section9() {
           </div>
         </footer>
       </div>
-    </section>
+    </div>
   );
 }
